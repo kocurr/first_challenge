@@ -4,26 +4,90 @@
     box-sizing: border-box;
 }
 body{
+    background-color: rgb(240, 240, 240);
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
     /* position: relative; */
 }
 .container{
     background-color: hsl(30, 38%, 92%);
-    border: 1px solid red;
     width: 1250px;
-    height: 630px;
+    height: 650px;
     margin: 120px auto auto;
+    /* border: 0 solid; */
+    position: relative;
+    box-shadow: 0 0 2em hsl(228, 12%, 80%);
 }
 .product__card {
-    border: 1px solid blue;
-    width: 650px;
-    height: 300px;
-    margin: 175px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(0, 0%, 100%);
+    /* border: 1px solid blue; */
+    border-radius: 10px;
+    width: 550px;
+    height: 400px;
     display: flex;
+    gap: 20px;
 }
 .product__card img {
-    width: 50%;
     height: 100%;
+    width: 50%;
+    border-radius:10px 0 0 10px;
 }
 .product__card__content{
+    line-height:normal;
+    padding: 25px 10px;
+    color: grey;
+}
+.product__card__content--cat{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.product__card__content--name{
+    color:hsl(212, 21%, 14%);
+    font-family: 'Fraunces';
+    padding-right: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 26px;
+    margin: 20px 0;    
+}
+.product__card__content--desc{
+    padding-right: 20px;
+}
+.product__card__content--prize{
+    margin: 25px 0;
+}
+.product__card__content--prize p {
+    display: inline;
+}
+.product__card__content--sale_prize {
+    color:hsl(158, 36%, 37%);
+    font-weight: 800;
+    font-family: 'Fraunces';
+    font-size: 28px;
+}
+.product__card__content--list_prize {
+    vertical-align: super;
+    margin-left: 15px;
+    text-decoration: line-through;
+    font-family: 'Fraunces';
+}
+.product__card__content--btn{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    background-color:hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    padding: 15px 45px;
+    /* margin: 0 auto; */
+    width: 90%;
+    border-radius: 10px;
 
 }
